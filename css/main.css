@@ -1,0 +1,346 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* variables and functions go here */
+/* body container */
+.main_cont {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Prompt', sans-serif;
+  /* header container goes here */
+  /* marker container designs goes here */
+  /* slider container goes here */
+}
+
+.main_cont header {
+  width: 100%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0em 0em 1em 1em;
+  background: url(/assets/Path-2.png) 100% calc(100% + 55px) no-repeat, url(/assets/path-3.png) 100% calc(100% + 65px) no-repeat;
+  background-size: 30em, 30em;
+}
+
+.main_cont .marker {
+  width: 100%;
+  height: 15px;
+  background: url(/assets/path-5.png);
+}
+
+.main_cont .slider_cont {
+  width: 100%;
+}
+
+.main_cont .footer {
+  width: 100%;
+}
+
+/* header styles starts here */
+.header_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_text .cgs {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.header_text .cgs .code {
+  color: #6A81FF;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.header_text .cgs .gamin {
+  color: #35D3AE;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.header_text .cgs .ators {
+  color: #F8EC56;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.header_text .num {
+  font-size: 100px;
+  color: #2DC1C1;
+  line-height: 1;
+  font-weight: bolder;
+  text-shadow: 0px 0px 7px #2DC1C1;
+}
+
+/* slider styles starts here */
+.slider_cont .slider_header {
+  width: 80%;
+  text-align: right;
+  margin: 35px 0px 20px 0px;
+}
+
+.slider_cont .slider_header .slider_heading {
+  font-size: 20px;
+  color: #959595;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: lighter;
+  line-height: 1.2;
+}
+
+.slider_cont .slider_header .slider_heading span {
+  font-weight: bold;
+  font-size: 35px;
+  color: #4E4E4E;
+}
+
+.slider_cont .slide_holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% auto 10%;
+      grid-template-columns: 10% auto 10%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+.slider_cont .slide_holder .btn {
+  width: 20%;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px #959595;
+          box-shadow: 0px 0px 5px #959595;
+  outline: none;
+}
+
+.slider_cont .slide_holder .btn i {
+  color: #4E4E4E;
+}
+
+.slider_cont .slide_holder .slider {
+  max-height: 50vh;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+}
+
+/* silder styles continues here */
+.pics_holder {
+  overflow: hidden;
+  height: 42vh;
+  width: 28%;
+  border-radius: 40px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: transparent;
+}
+
+.pics_holder img {
+  height: 42vh;
+  width: 100%;
+  border-radius: 40px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.pics_holder .name {
+  display: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+/* slider designs continues here */
+.pics_holder:hover {
+  width: 28%;
+  height: 50vh;
+  border-radius: 40px 0px 40px 0px;
+}
+
+.pics_holder:hover img {
+  height: 42vh;
+  width: 100%;
+  border-radius: 40px 0px 40px 0px;
+}
+
+.pics_holder:hover .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  width: 100%;
+  background-color: #6A81FF;
+  color: #ffffff;
+}
+
+.pics_holder:hover .name p {
+  color: #ffffff;
+  text-align: left;
+  text-indent: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/*design styles starts here */
+.designs_holder {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-row-gap: 30px;
+  /* justify-content: center; */
+  margin: 100px 0px 100px 0px;
+  text-align: center;
+}
+
+.designs_holder .design_header_cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.designs_holder .design_header_cont .design_header {
+  width: 15%;
+  background-color: transparent;
+  border: 1px solid #959595;
+  border-radius: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 5px 0px #4E4E4E;
+          box-shadow: 0px 0px 5px 0px #4E4E4E;
+}
+
+/*design styles continues here */
+.designs {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.designs .design {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px #959595;
+          box-shadow: 0px 1px 3px #959595;
+}
+
+.designs .design .design_pics {
+  width: 100%;
+  height: 250px;
+  background-color: #959595;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.designs .design .design_info {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 20px;
+  color: #575757;
+  line-height: 2;
+}
+
+.designs .design .design_info .name_rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 20px;
+  color: #afafaf;
+}
+
+.designs .design .design_info .name_rating span {
+  color: #6A81FF;
+  font-size: 22px;
+}
+
+.designs .add {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.designs .add .btn2 {
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 2px #959595;
+          box-shadow: 0px 0px 2px #959595;
+}
+
+.designs .add .btn2 .add_icon {
+  color: #575757;
+}
+
+.designs .add:hover {
+  -webkit-box-shadow: 0px 0px 2px #959595;
+          box-shadow: 0px 0px 2px #959595;
+}
+
+.designs .add:hover .btn2 {
+  background-color: #6A81FF;
+}
+
+.designs .add:hover .btn2 .add_icon {
+  color: #ffffff;
+}
+
+/*footer */
+footer {
+  width: 100%;
+  height: 30vh;
+  background: #F8EC56 url(/assets/path-4.png) -20px calc(100% + 35px) no-repeat;
+  background-size: 150px;
+}
+/*# sourceMappingURL=main.css.map */
